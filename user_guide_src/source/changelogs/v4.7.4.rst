@@ -31,6 +31,7 @@ Bugs Fixed
 **********
 
 - **Database:** Fixed a bug where ``updateBatch()`` could be called after Query Builder ``where()`` conditions, even though it's not supported. In this situation, now the ``DatabaseException`` is thrown.
+- **Commands:** Fixed a bug where ``make:model --return entity`` did not preserve sub-namespaces when generating the related Entity class.
 
 See the repo's
 `CHANGELOG.md <https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_
